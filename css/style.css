@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1600px;
+    /*height: 100%;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid red;*/
+
+}
+
+body {
+    background: #E4ECF6;
+    color: #4A4A4A;
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    background: url('../img/amsterdam-1769540_1920.jpg') no-repeat center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-block
+}
+
+header h1 a {
+    color: #F4F4F4;
+    /*color: #dee1e3;*/
+    /*color: #7f8a93;*/
+    font-size: 150px;
+    text-decoration: none;
+    z-index: 1;
+
+}
+
+header h1 > a:before {
+    content: "";
+    position: absolute;
+    width: 63%;
+    height: 10px;
+    bottom: 380px;
+    left: 349px;
+    background: #84BDD1;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+header h1 > a:hover:before,
+header h1 > a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+.fa-chevron-circle-down {
+    color: #F4F4F4;
+    font-size: 60px;
+    /*align-self: flex-start;*/
+
+
+}
+.socketImg {
+    display: flex;
+    justify-content: center;
+}
+
+.socketImg img {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.mapContent {
+    width: 70%;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    background: #E4ECF6;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    /*width: 85%;*/
+    /*height: 680px;*/
+}
+
+.countryInfo {
+    width: 30%;
+    background: #E4ECF6;
+    /*background-image: linear-gradient(to top, #09203f 0%, #537895 100%);*/
+    /*border-left: 1px solid red;*/
+}
+
+svg {
+    /*display: block;*/
+    width: 85%;
+    height: 580px;
+}
+
+
+.selected {
+    fill: #4682b4;
+    stroke: #FFF;
+    stroke-width: 1px;
+}
+
+.countryInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.fa-chevron-left {
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 15px;
+    color: #E4ECF6;
+}
+
+.fa-chevron-right {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    color: #E4ECF6;
+}
+
+.countryEl {
+    background: #cfd3d6;
+    width: 330px;
+    height: 60px;
+    border: 1px solid #708090;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.countryEl h3 {
+    display: flex;
+}
+
+.countryEl img {
+    display: flex;
+    width: 70px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.countryMoreInfo {
+    background: #cfd3d6;
+    width: 330px;
+    height: 200px;
+    border: 1px solid #708090;
+    border-top: none;
+    box-sizing: border-box;
+}
+
+.countryInfo_list {
+    display: none;
+}
+
+.countryMoreInfo h3 {
+    margin: 0;
+}
+
+.visible {
+    display: block;
+}
+
+#section1 {
+    width: 100vw;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    font-family: 'Open Sans', sans-serif;
+    /*display: flex;*/
+    /*height: 100vh;*/
+}
+
+.emergencyLogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 110px;
+}
+
+.emergencyText {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+}
+
+.policeLogo1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.fireLogo1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.medicLogo1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.sectionHeader {
+    height: 165px;
+    width: 100vw;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F4F4F4;
+}
+
+.sectionFooter {
+    display: flex;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    height: 165px;
+    width: 100vw;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.fa-chevron-circle-up {
+    color: #F4F4F4;
+    font-size: 60px;
+}
+
+.container2 {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.countryVaccination {
+    font-size: 15px;
+}
+.countryVaccinationInfo {
+    font-size: 15px;
+}
+
+.countryName {
+    margin-left: 5px;
+}
+
+.countryMoreInfo > * {
+    margin-left: 5px;
+}
+
+.vacNoNeed {
+    color: #32cd32;
+}
+
+.fa-globe {
+    margin-top: 5px;
+}
+
+.sectionHeader h2 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.fa-times-circle {
+    position: relative;
+    top: -509px;
+    left: 1563px;
+    font-size: 30px;
+    color: #F4F4F4;
+    opacity: 0.4;
+}
+
